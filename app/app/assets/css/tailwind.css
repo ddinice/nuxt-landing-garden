@@ -1,12 +1,36 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
+@import "fonts.css";
 @import "tailwindcss";
 @import "tw-animate-css";
+
+@import "colors.css";
+
+@layer base {
+  html {
+    font-family: "Karla", "Segoe UI", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  h7,
+  .heading {
+    font-family: "Newsreader";
+  }
+
+  p,
+  a,
+  button {
+    font-family: "Karla";
+  }
+}
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --ease-brand: cubic-bezier(.2, 0, 0, 1);
   --font-heading: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);

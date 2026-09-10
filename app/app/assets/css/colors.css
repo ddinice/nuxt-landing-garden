@@ -1,0 +1,82 @@
+@theme {
+  /* Base — greens */
+  --color-c-green-50: var(--c-green-50);
+  --color-c-green-500: var(--c-green-500);
+  --color-c-green-600: var(--c-green-600);
+  --color-c-green-700: var(--c-green-700);
+  --color-c-green-900: var(--c-green-900);
+
+  /* Base — sages (muted text) */
+  --color-c-sage-300: var(--c-sage-300);
+  --color-c-sage-400: var(--c-sage-400);
+  --color-c-sage-500: var(--c-sage-500);
+  --color-c-sage-600: var(--c-sage-600);
+  --color-c-sage-700: var(--c-sage-700);
+  --color-c-sage-900: var(--c-sage-900);
+
+  /* Base — creams */
+  --color-c-cream-0: var(--c-cream-0);
+  --color-c-cream-50: var(--c-cream-50);
+  --color-c-cream-100: var(--c-cream-100);
+  --color-c-cream-200: var(--c-cream-200);
+
+  /* Base — red */
+  --color-c-red-600: var(--c-red-600);
+  /* Base — ochre */
+  --color-c-ochre-500: var(--c-ochre-500)
+}
+
+:root {
+  /* Base — greens */
+  --c-green-900: #16261C;
+  --c-green-700: #1F3A2B;
+  --c-green-600: #2E4C36;
+  --c-green-500: #59835F;
+  --c-green-50: #DDE4D6;
+
+  /* Base — sages (muted text) */
+  --c-sage-900: oklch(0.25 0.03 156.21 / 0.12);
+  --c-sage-700: #5F6957;
+  --c-sage-600: #5C664F;
+  --c-sage-500: #8C9885;
+  --c-sage-400: #9DAB95;
+  --c-sage-300: #BCC7B4;
+
+  /* Base — creams */
+  --c-cream-0: #F1EEE4;
+  --c-cream-50: #F6F3EA;
+  --c-cream-100: #EFEBDF;
+  --c-cream-200: #E2DED2;
+
+  /* Base — accents */
+  --c-red-600: #C0392B;
+  --c-ochre-500: #C98A3C;
+
+  /* Base grey */
+  --c-gray-50: oklch(0.25 0.03 156.21 / 0.12);
+
+  /* Semantic — surfaces */
+  --surface-page: var(--c-cream-050);
+  --surface-alt: var(--c-cream-100);
+  --surface-brand: var(--c-green-700);
+  --surface-deep: var(--c-green-900);
+  --surface-placeholder: var(--c-cream-200);
+
+  /* Semantic — text */
+  --text-primary: var(--c-green-900);
+  --text-secondary: var(--c-sage-600);
+  --text-meta: var(--c-sage-700);
+  --text-accent: var(--c-red-600);
+  --text-on-brand: var(--c-cream-000);
+  --text-on-brand-muted: var(--c-sage-300);
+  --text-on-brand-faint: var(--c-sage-400);
+  --text-on-deep: var(--c-sage-500);
+  --text-band: var(--c-green-050);
+
+  /* Semantic — lines */
+  --border-hairline: rgba(22, 38, 28, .12);
+  --border-strong: rgba(22, 38, 28, .30);
+  --border-on-brand: rgba(241, 238, 228, .40);
+  --border-slot: rgba(201, 138, 60, .90);
+  --rule-quote: var(--c-green-700);
+}

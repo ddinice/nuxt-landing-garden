@@ -1,0 +1,13 @@
+:root {
+  /* The hero "photo" is a tinted gradient, not an image. Reuse verbatim. */
+  --tint-hero: radial-gradient(115% 85% at 72% 12%, #59835F 0%, #2E4C36 46%, #16281D 100%);
+  --tint-hero-texture: repeating-linear-gradient(116deg, rgba(255,255,255,.055) 0 3px, transparent 3px 12px);
+  --tint-hero-scrim: linear-gradient(to top, rgba(10,20,14,.5), transparent);
+
+  /* Photo placeholder: flat cream with a fine diagonal hatch */
+  --hatch-placeholder: repeating-linear-gradient(135deg, rgba(22,38,28,.06) 0 6px, transparent 6px 15px);
+
+  /* Illustration slot label chip */
+  --chip-slot-bg: rgba(22, 38, 28, .72);
+  --chip-slot-fg: #F6EFE2;
+}

@@ -1,0 +1,25 @@
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 30px;
+  --space-8: 34px;
+  --space-9: 44px;
+  --space-10: 52px;
+  --space-11: 66px;
+  --space-12: 74px;
+
+  /* Layout */
+  --gutter-desktop: 44px;   /* every desktop section's horizontal padding */
+  --gutter-mobile: 20px;
+  --section-y-desktop: 74px 44px 66px;
+  --section-y-mobile: 30px 20px 26px;
+  --hero-gap: 52px;
+  --grid-gap: 16px;
+  --grid-gap-tight: 14px;
+  --max-headline: 520px;
+  --max-paragraph: 430px;
+}

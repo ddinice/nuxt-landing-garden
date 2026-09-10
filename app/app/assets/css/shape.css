@@ -1,0 +1,13 @@
+:root {
+  /* The brand has three radii and no shadows. Flatness is the point. */
+  --radius-block: 3px;     /* photo blocks, cards, slots */
+  --radius-chip: 2px;      /* mono label chips */
+  --radius-pill: 999px;    /* every button and the header phone link */
+  --radius-device: 26px;   /* mobile mock shell only */
+
+  --border-width-hairline: 1px;
+  --border-width-slot: 1.5px;
+  --border-width-rule: 2px;   /* the green rule above a pull quote */
+
+  --shadow-none: none;
+}
