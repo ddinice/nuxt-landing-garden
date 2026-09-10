@@ -3,7 +3,7 @@ import { Leaf } from "@lucide/vue";
 import { ref, watch } from "vue";
 import { Button } from "@/components/ui/button";
 
-const open = ref(true);
+const open = ref(false);
 const links = [
   { label: "Prestations", href: "#prestations" },
   { label: "Avant / après", href: "#avant-apres" },
@@ -35,7 +35,7 @@ if (import.meta.client) {
       </div>
       <Leaf @click="open = !open" class="w-5" color="#1f3a2b" />
     </div>
-    <Transition name="ej-menu">
+    <Transition name="ej-menu" :duration="{ enter: 1200, leave: 180 }">
       <div
         v-if="open"
         id="menu-mobile"
@@ -65,7 +65,7 @@ if (import.meta.client) {
 
         <div
           class="ej-menu__item px-5 py-3 mt-10"
-          :style="{ '--i': links.length }"
+          :style="{ '--i': links.length + 2 }"
         >
           <p class="uppercase text-olive-300 text-xs">
             Devis gratuit sur place
@@ -107,7 +107,7 @@ if (import.meta.client) {
 /* ── 2. the children, staggered ───────────────────── */
 .ej-menu-enter-active .ej-menu__item {
   animation: ej-menu-item 340ms var(--ease-brand) backwards;
-  animation-delay: calc(40ms + var(--i) * 150ms);
+  animation-delay: calc(40ms + var(--i) * 50ms);
 }
 
 @keyframes ej-menu-item {
