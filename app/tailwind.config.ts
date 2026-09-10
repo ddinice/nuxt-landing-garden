@@ -8,7 +8,16 @@ export default {
     "./.nuxt/components.d.ts",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        cgreen: {
+          50: "var(--c-green-50)",
+          500: "var(--c-green-500)",
+          700: "var(--c-green-700)",
+          900: "var(--c-green-900)",
+        }
+      }
+    },
   },
   plugins: [],
 }
