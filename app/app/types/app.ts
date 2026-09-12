@@ -4,7 +4,6 @@ export interface Business {
   phone: string
   address: string
   hours: string
-  hoursNote: string
 }
 
 declare module '@nuxt/schema' {

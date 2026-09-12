@@ -12,7 +12,6 @@ export default defineNuxtConfig({
       phone: '+41 79 584 55 75',
       address: 'Av. de la Vogéaz 5, 1110 Morges',
       hours: 'Lun–Ven 7h30–18h',
-      hoursNote: 'Sam sur rendez-vous',
     },
   },
 

@@ -12,7 +12,7 @@ const { business } = useAppConfig();
 
 const open = ref(false);
 // amination index for the last element
-const lastIndex = ref(2)
+const lastIndex = ref(2);
 
 watch(open, (v) => {
   document.body.style.overflow = v ? "hidden" : "";
@@ -32,7 +32,13 @@ const handleTogleOpen = () => {
         </div>
         <div class="hidden md:flex flex-row gap-8 items-center">
           <NavbarLinks :links="navbarlinks" :is-open="open" />
-          <Button as="a" href="#" variant="brandGreen" size="c-lg" class="hidden lg:flex">
+          <Button
+            as="a"
+            href="#"
+            variant="brandGreen"
+            size="c-lg"
+            class="hidden lg:flex"
+          >
             {{ business.phone }}
           </Button>
         </div>
@@ -54,7 +60,7 @@ const handleTogleOpen = () => {
       </template>
       <template #footer>
         <div
-          class="drawer__item px-5 py-3 mt-10"
+          class="drawer__item px-5 py-3"
           :style="{ '--i': navbarlinks.length + lastIndex }"
         >
           <p class="uppercase text-olive-300 text-xs">
@@ -66,18 +72,17 @@ const handleTogleOpen = () => {
           >
             {{ business.phone }}
           </a>
-          <div class="mt-4 flex gap-2">
-            <Button as="a" href="#" variant="brandWhite" size="c-lg">
+          <div class="mt-4 flex gap-2 justify-between w-full">
+            <Button as="a" href="#" variant="brandWhite" size="c-lg" class="flex-1">
               WhatsApp
             </Button>
-            <Button as="a" href="#" variant="brandOutline" size="c-lg"
-              >Messenger</Button
-            >
+            <Button as="a" href="#" variant="brandOutline" size="c-lg" class="flex-1">
+              Messenger
+            </Button>
           </div>
           <p class="mt-5 text-xl text-olive-200">
             {{ business.address }}<br />
             {{ business.hours }}<br />
-            {{ business.hoursNote }}
           </p>
         </div>
       </template>

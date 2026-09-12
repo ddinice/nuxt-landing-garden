@@ -29,7 +29,7 @@ const emit = defineEmits<{
       :style="{ '--i': i }"
       :class="{
         'text-base text-c-green-700 hover:text-c-green-500 transition-all': props.variant === 'navbar',
-        'text-3xl drawer__item border-b border-[#f1eee738] py-4 heading leading-none last:border-0 font-thin': props.variant === 'drawer',
+        'text-3xl drawer__item border-b border-[#f1eee738] py-4 heading leading-none font-thin': props.variant === 'drawer',
       }"
       @click="$emit('close')"
     >
