@@ -5,12 +5,23 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/css/tailwind.css"],
 
+  appConfig: {
+    business: {
+      name: 'Edelviane — Jardin',
+      logo: '@/assets/images/logo.png',
+      phone: '+41 79 584 55 75',
+      address: 'Av. de la Vogéaz 5, 1110 Morges',
+      hours: 'Lun–Ven 7h30–18h',
+      hoursNote: 'Sam sur rendez-vous',
+    },
+  },
+
   vite: {
     plugins: [
       tailwindcss(),
     ],
   },
-  
+
   modules: ["shadcn-nuxt"],
   shadcn: {
     prefix: '',

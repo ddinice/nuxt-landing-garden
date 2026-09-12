@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import Navbar from '~/components/Navbar.vue';
-
+import Navbar from '@/components/navbar/Navbar.vue';
 </script>
 
 <template>
-  <div class="max-w-6xl m-auto bg-c-cream-50">
+  <div class="max-w-full m-auto bg-c-cream-50 2xl:max-w-[2000px]">
     <div>
       <Navbar />
       <slot />

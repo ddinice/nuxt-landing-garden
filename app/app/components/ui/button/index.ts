@@ -20,6 +20,7 @@ export const buttonVariants = cva(
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
         brandWhite: "bg-olive-300 text-c-green-700",
+        brandGreen: "bg-c-green-700 text-olive-300",
         brandOutline: "border bg-transparent text-olive-200 shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
       },
       size: {
